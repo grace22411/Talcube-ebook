@@ -31,16 +31,16 @@
     <div class="container registration">
         <h2>Almost Done!</h2>
         <p>Please register to get the Ebook straight into your mail</p>
-        <form action="">
+        <form onsubmit="return mySubmitFunction(event)" method="post">
             <div class="row">
                 <div class="col-md-12">
-                    <input type="text" class="form-control" placeholder="Full Name" required>
+                    <input type="text" class="form-control" id="name" placeholder="Full Name" required>
                 </div>
                 <div class="col-md-12">
-                    <input type="email" class="form-control" placeholder="Email" required>
+                    <input type="email" class="form-control" id="email" placeholder="Email" required>
                 </div>
             </div>
-            <button>Submit</button>
+            <button id="submit">Submit</button>
         </form>
     </div>
 
@@ -48,11 +48,11 @@
       
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="assets/js/jquery-2.2.4.min.js"></script>
-    <script type="text/javascript" src="assets/js/script.js"></script>
-    <script src="js/wow.min.js"></script>
+    <!-- <script type="text/javascript" src="js/jquery-2.2.4.min.js"></script> -->
+    <script type="text/javascript" src="js/script.js"></script>
+    <!-- <script src="js/wow.min.js"></script>
     <script type="text/javascript">
         new WOW().init();
-     </script>
+     </script> -->
 </body>
 </html>
