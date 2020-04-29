@@ -7,6 +7,10 @@ body, html {
   font-family: "Poppins", sans-serif;
 }
 
+#toast-container {
+  margin-top: 20px;
+}
+
 .modal-content {
   width: 100%;
   height: 100%;
@@ -247,6 +251,9 @@ section header i {
   float: right;
 }
 @media only screen and (max-width: 320px) {
+  .caption {
+    padding-top: 70px;
+  }
   .caption .row {
     width: 100%;
     margin-top: 60px;
@@ -254,8 +261,12 @@ section header i {
   .caption .row .col-md-6 {
     padding-right: 0;
   }
+  .caption .row .col-md-6 h2 {
+    line-height: 30px;
+    font-weight: 800;
+  }
   .caption .row .col-md-6 p {
-    text-align: justify;
+    margin-top: 5px;
   }
   .caption .row .col-md-6 .links {
     margin-top: 30px;
@@ -286,13 +297,23 @@ section header i {
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 540px) {
+  .caption {
+    padding-right: 15px !important;
+  }
   .caption .row {
     width: 100%;
-    margin-top: 60px;
+    margin-top: 50px;
   }
   .caption .row .col-md-6 {
     padding-right: 0;
     padding-top: 50px;
+  }
+  .caption .row .col-md-6 h2 {
+    line-height: 30px;
+    font-weight: 800;
+  }
+  .caption .row .col-md-6 p {
+    margin-top: 5px;
   }
   .caption .row .col-md-6 .links {
     margin-top: 30px;
@@ -328,8 +349,12 @@ section header i {
     padding-right: 0;
     padding-top: 50px;
   }
+  .caption .row .col-md-6 h2 {
+    line-height: 30px;
+    font-weight: 800;
+  }
   .caption .row .col-md-6 p {
-    text-align: justify;
+    margin-top: 5px;
   }
   .caption .row .col-md-6 .links {
     margin-top: 30px;
@@ -586,6 +611,8 @@ footer a:hover {
 }
 .header .container img {
   height: 100px;
+  margin-top: -20px;
+  margin-bottom: -20px;
   width: 100px;
 }
 
@@ -627,6 +654,9 @@ footer a:hover {
   margin-top: 30px;
   background-color: #18ae60;
   color: #fff;
+}
+.registration form button .fa-spinner {
+  margin-left: 15px;
 }
 @media only screen and (max-width: 320px) {
   .registration {

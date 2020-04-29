@@ -9,6 +9,9 @@ body,html{
     font-family: 'Poppins', sans-serif;
 }
 
+#toast-container{
+    margin-top: 20px;
+}
 .modal-content{
     width:100%;
     height:100%;
@@ -278,13 +281,18 @@ section{
         }
        
         @media only screen and (max-width:320px){
+            padding-top: 70px;
             .row{
                 width:100%;;
                 margin-top:60px;
                 .col-md-6{
                     padding-right: 0;
+                    h2{
+                        line-height: 30px;
+                        font-weight: 800;
+                    }
                     p{
-                        text-align: justify;
+                        margin-top: 5px;
                     }
                     .links{
                         margin-top:30px;
@@ -321,12 +329,20 @@ section{
         }
 
         @media only screen and (min-width:321px) and (max-width:540px){
+            padding-right: 15px !important;
             .row{
                 width:100%;;
-                margin-top:60px;
+                margin-top: 50px;
                 .col-md-6{
                     padding-right: 0;
                     padding-top:50px;
+                    h2{
+                        line-height: 30px;
+                        font-weight: 800;
+                    }
+                    p{
+                        margin-top: 5px;
+                    }
                     .links{
                         margin-top:30px;
                        a{
@@ -365,8 +381,12 @@ section{
                 .col-md-6{
                     padding-right: 0;
                     padding-top:50px;
+                    h2{
+                        line-height: 30px;
+                        font-weight: 800;
+                    }
                     p{
-                        text-align: justify;
+                        margin-top: 5px;
                     }
                     .links{
                         margin-top:30px;
@@ -660,6 +680,8 @@ footer{
     .container{
         img{
             height:100px;
+            margin-top: -20px;
+            margin-bottom: -20px;
             width:100px;
         }
     }
@@ -702,6 +724,10 @@ footer{
             margin-top: 30px;
             background-color: $text-color;
             color:#fff;
+            .fa-spinner{
+                margin-left: 15px;
+                //display: none;
+            }
         }
     }
     @media only screen and (max-width:320px){
